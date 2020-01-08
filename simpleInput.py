@@ -1,6 +1,7 @@
 """Library for simplified input handling"""
 import builtins
 
+
 def sinput(prompt_text, input_type, failure_text, range_low, range_high):
     """
     simpleInput input handler

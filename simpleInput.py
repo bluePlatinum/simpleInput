@@ -21,4 +21,4 @@ def sinput(prompt_text, input_type, failure_text, range_low, range_high):
             else:
                 return given_input
         else:
-            print(failure_text) 
+            print(failure_text)

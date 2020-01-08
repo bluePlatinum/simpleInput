@@ -1,5 +1,5 @@
 """Library for simplified input handling"""
-
+import builtins
 
 def sinput(prompt_text, input_type, failure_text, range_low, range_high):
     """
@@ -15,7 +15,7 @@ def sinput(prompt_text, input_type, failure_text, range_low, range_high):
     while True:
         given_input = input(prompt_text)
         if type(given_input) == input_type:
-            if type(given_input) == __builtins__.int or type(given_input) == __builtins__.float_:
+            if type(given_input) == builtins.int or type(given_input) == builtins.float:
                 if range_low <= given_input and given_input <= range_high:
                     return given_input
             else:

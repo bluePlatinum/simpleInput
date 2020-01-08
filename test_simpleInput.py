@@ -1,15 +1,16 @@
 import simpleInput
+import builtins
 
 
 class TestClass:
     def test_integer(self):
-        simpleInput.input = lambda: 5
-        result = simpleInput.sinput("", __builtins__.int, "", 0, 10)
-        assert type(result) == __builtins__.int
+        simpleInput.input = lambda x: 5
+        result = simpleInput.sinput("", builtins.int, "", 0, 10)
+        assert type(result) == builtins.int
         assert result == 5
 
     def test_float(self):
-        simpleInput.input = lambda: 3.1
-        result = simpleInput.sinput("", __builtins__.float, "", 0, 5)
-        assert type(result) == __builtins__.float
+        simpleInput.input = lambda x: 3.1
+        result = simpleInput.sinput("", builtins.float, "", 0, 5)
+        assert type(result) == builtins.float
         assert result == 3.1

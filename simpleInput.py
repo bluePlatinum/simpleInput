@@ -2,7 +2,7 @@
 import builtins
 
 
-def sinput(prompt_text, input_type, failure_text, range_low, range_high):
+def sinput(prompt_text, input_type, failure_text, range_low = 0, range_high = 0):
     """
     simpleInput input handler
     :param prompt_text: Text to show when prompting for input
